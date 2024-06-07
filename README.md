@@ -48,8 +48,14 @@ Modify website build and encryption settings in [`quarto-staticrypt-ghpages.yml`
 
 To add encryption to an existing website, simply:
 
-1. Copy and paste [`quarto-staticrypt-ghpages.yml`](.github/workflows/quarto-staticrypt-ghpages.yml) into `.github/workflows/` your existing repo, creating the folder if it doesn't exist.
+1. Add [`.github/workflows/quarto-staticrypt-ghpages.yml`](.github/workflows/quarto-staticrypt-ghpages.yml) into your existing repo, creating the `.github/workflows` folder if it doesn't already exist.
 2. configure GitHub Pages to deploy from GitHub Actions as per instructions above.
+
+To retrieve the action config via CLI:
+
+```
+curl -O https://raw.githubusercontent.com/cynthiahqy/quarto-password/main/.github/workflows/quarto-staticrypt-ghpages.yml
+```
 
 ## Modify Action to run Computations before rendering Quarto Website.
 
